@@ -18,7 +18,7 @@ This project uses the [arXiv metadata dataset](https://www.kaggle.com/datasets/C
 - **Subset size:** 5,000 papers (most recent first)
 - **Fields used:** `id`, `title`, `abstract`, `authors`, `categories`, `update_date`
 
-The full dataset (~4GB) is processed via streaming to produce a ~5MB filtered file. See `scripts/prepare_data.py` for the pipeline.
+The full dataset (~4GB) is processed via streaming to produce a ~7MB filtered file. See `scripts/prepare_data.py` for the pipeline.
 
 To reproduce:
 1. Download `arxiv-metadata-oai-snapshot.json` from Kaggle
