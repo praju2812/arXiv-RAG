@@ -6,6 +6,11 @@ SPECTER is a transformer model trained specifically for scientific text represen
 from typing import List
 
 from sentence_transformers import SentenceTransformer
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+hf_token = os.getenv("HF_TOKEN")
 
 
 class SpecterEmbedder:
