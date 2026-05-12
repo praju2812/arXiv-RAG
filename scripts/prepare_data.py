@@ -26,18 +26,11 @@ def filter_arxiv():
             f"Download from https://www.kaggle.com/datasets/Cornell-University/arxiv "
             f"and place in data/ directory."
         )
-<<<<<<< HEAD
-    
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    
-    count = 0
-=======
     # Make sure output directory exists
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     
     count = 0
     # Stream through input file line by line to avoid memory issues, filter by category, and write out matching papers
->>>>>>> c4448dab2a3faa09e5517e8168fc35356eb67a89
     with open(INPUT_PATH, "r") as fin, open(OUTPUT_PATH, "w") as fout:
         for line in fin:
             paper = json.loads(line)
