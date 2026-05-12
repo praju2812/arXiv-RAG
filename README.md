@@ -1,3 +1,14 @@
+---
+title: arXiv RAG
+emoji: 📚
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: 1.35.0
+app_file: app/streamlit_app.py
+pinned: false
+---
+
 # arXiv-RAG
 
 A Retrieval-Augmented Generation system over arXiv CS/ML paper abstracts. 
@@ -28,7 +39,7 @@ To reproduce:
 ## Stack
 - **Embeddings:** SPECTER (allenai/specter) — purpose-built for scientific text
 - **Vector store:** ChromaDB (local persistent)
-- **Generation:** HuggingFace Inference API
+- **Generation:** Llama 3.1 (via Groq API)
 - **UI:** Streamlit
 
 ## Architecture
