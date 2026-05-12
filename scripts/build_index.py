@@ -7,8 +7,8 @@ Persist the ChromaDB index to disk
 """
 import json
 
-from embeddings import SpecterEmbedder
-from vector_store import PaperVectorStore
+from src.embeddings import SpecterEmbedder
+from src.vector_store import PaperVectorStore
 
 def build_index():
     """ 
@@ -46,15 +46,15 @@ def build_index():
         paper_id = paper["id"]
         title = paper["title"]
         abstract = paper["abstract"]
-        author = paper.get("authors", "")
-        category = paper["categories"]
+        authors = paper.get("authors", "")
+        categories = paper["categories"]
         update_date = paper.get("update_date", "")
         metadata = {
             "id": paper_id,
             "title": title,
             "abstract": abstract,
-            "authors": author,
-            "categories": category,
+            "authors": authors,
+            "categories": categories,
             "update_date": update_date,
         }
         ids.append(paper_id)
