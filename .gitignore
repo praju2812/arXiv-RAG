@@ -27,7 +27,6 @@ data/*.npy
 data/*.pkl
 
 # ML artifacts
-chroma_db/
 mlruns/
 *.pt
 *.pth
