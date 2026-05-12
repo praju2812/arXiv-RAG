@@ -43,13 +43,13 @@ To reproduce:
 - **UI:** Streamlit
 
 ## Architecture
-[diagram or text architecture description]
+Query → SPECTER embeddings → ChromaDB similarity search → top-5 abstracts → Llama 3.1 (Groq) → grounded answer
 
 ## Demo
-[link to HuggingFace Spaces deployment — to be added]
+[Live Demo](https://huggingface.co/spaces/Prajakta2812/arxiv-rag)
 
 ## Status
-🚧 In active development
+Deployed
 
 ## Setup
 [to be added]
